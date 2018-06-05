@@ -31,7 +31,7 @@ function Start(options){
 	    defaults.successPrefix = options.successPrefix;
 	}
 
-	request(options.endpoint, (error, response, body) => {
+	request(options.endpoint,  function (error, response, body) {
 	    if(error) {
 	      	console.error('\n\n\n Could not get webhook info:'+error.stack+' \n\n\n');
 	    }
