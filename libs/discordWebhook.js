@@ -50,11 +50,11 @@ function Start(options){
 function sendMessage(message) {
   try {
     request({
-      url: defaults.endpoint+'/slack',
+      url: defaults.endpoint,
       method: 'POST',
       body: {
         username: defaults.botUsername,
-        text: message
+        content: message
       },
       json:true
     }, function (error, response, body) {
@@ -77,5 +77,6 @@ Start.prototype.error = function (message) {
 Start.prototype.success = function (message) {
   sendMessage(defaults.successPrefix+' '+message);
 };
+
 
 module.exports = Start;
