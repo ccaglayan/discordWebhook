@@ -50,7 +50,7 @@ function Start(options){
 function sendMessage(message) {
   try {
     request({
-      url: defaults.endpoint,
+      url: defaults.endpoint+'/slack',
       method: 'POST',
       body: {
         username: defaults.botUsername,
