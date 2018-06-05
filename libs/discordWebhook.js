@@ -68,14 +68,14 @@ function sendMessage(message) {
   }
 };
 
-Hook.prototype.info = function (message) {
+Start.prototype.info = function (message) {
   sendMessage(defaults.infoPrefix+' '+message);
 };
-Hook.prototype.error = function (message) {
+Start.prototype.error = function (message) {
   sendMessage(defaults.errorPrefix+' '+message);
 };
-Hook.prototype.success = function (message) {
+Start.prototype.success = function (message) {
   sendMessage(defaults.successPrefix+' '+message);
 };
 
-module.exports = Hook;
+module.exports = Start;
