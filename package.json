@@ -20,9 +20,6 @@
   "contributors": [
     "Çağlar Çağlayan <c.caglayan.cc@gmail.com> (http://www.caglarcaglayan.com)"
   ],
-  "engines": {
-    "node": "8.11.2"
-  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ccaglayan/discordWebhook/issues"
