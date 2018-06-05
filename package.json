@@ -1,0 +1,24 @@
+{
+  "name": "discordWebhook",
+  "version": "1.0.0",
+  "description": "Log events from nodejs to discord using webhooks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccaglayan/discordWebhook"
+  },
+  "main": "./libs/discord-logger",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Discord",
+    "webhook",
+    "logger",
+    "bot"
+  ],
+  "author": "Çağlar Çağlayan <c.caglayan.cc@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "request": ">=2.50.0"
+  }
+}
