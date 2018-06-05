@@ -57,7 +57,7 @@ function sendMessage(message) {
         text: message
       },
       json:true
-    }, (error, response, body) => {
+    }, function (error, response, body) {
       if (error) {
         console.error('\n\n\nCould not log following message to Discord: '+message+'\nError stack trace: '+error.stack+'\n\n\n');
       }
